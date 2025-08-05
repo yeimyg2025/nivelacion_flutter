@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:nivelacion_flutter/splash_screen.dart';
 //metodo con el que trabajamos
 
 void main(){
@@ -12,6 +12,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      title: 'Nivelacion App',
+      theme: ThemeData(
+        primaryColor: Colors.green
+      ),
+      home: SplashScreen(),
     );
   }
 }
